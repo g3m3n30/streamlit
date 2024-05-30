@@ -19,7 +19,8 @@ cred_1 ={
 }
 
 # Authenticate with Google Sheets
-gc = gspread.service_account(filename=cred_1)
+# gc = gspread.service_account(filename=cred_1)
+gc = gspread.service_account_from_dict(cred_1)
 
 # Function to get data from Google Sheets
 def get_data(sheet_name, worksheet_name):
