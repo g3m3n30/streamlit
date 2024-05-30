@@ -2,3 +2,5 @@ requests
 pandas
 datetime
 gspread
+streamlit
+plotly
