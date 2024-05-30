@@ -33,7 +33,7 @@ def get_data(sheet_name, worksheet_name):
 # Function to create interactive chart
 def create_chart(df):
     fig = make_subplots(specs=[[{"secondary_y": True}]])
-    fig.add_trace(go.Scatter(x=df['Date'], y=df['Price'], name='Price'), secondary_y=False)
+    fig.add_trace(go.Scatter(x=df['Date'], y=df['SELL'], name='Price'), secondary_y=False)
     fig.update_layout(title='Historical Price Chart', xaxis_title='Date', yaxis_title='Price')
     return fig
 
